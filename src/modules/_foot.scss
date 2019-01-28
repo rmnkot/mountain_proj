@@ -1,0 +1,25 @@
+/*-------------------------------------  Foot  ------------------------------------------*/
+.testimonial,
+.footer__form,
+.footer__bottom {
+  grid-column: 2 / 3;
+}
+
+.footer {
+  padding-top: 70px;
+}
+
+.testimonial {
+  display: flex;
+  margin: 15px 0 140px;
+}
+
+.footer__form {
+  margin: 0 auto 165px;
+
+  height: 500px;
+}
+
+.footer__bottom {
+  height: 83px;
+}

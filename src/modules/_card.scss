@@ -1,0 +1,198 @@
+/*-------------------------------------  Card  ------------------------------------------*/
+
+.grid__card {
+  text-align: center;
+  padding: 45px 35px;
+
+  &__img {
+    max-width: 100%;
+    display: block;
+  }
+
+  &__text__top {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: rgb(22, 181, 239);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 48px;
+    display: inline-block;
+  }
+
+  &__text__head {
+    margin-bottom: 18px;
+  }
+
+  &__text__description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+  }
+
+  &__text__number {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 14px;
+    @include var(color, clr-base-dk);
+  }
+}
+
+.scheme__card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 20px;
+
+  &__number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid;
+    @include var(border-color, clr-primary);
+    line-height: 44px;
+    // font-family: 'Roboto', sans-serif;
+    @include var(color, clr-primary);
+    font-weight: 900;
+    margin-bottom: 58px;
+  }
+
+  &__circle {
+    width: 180px;
+    height: 180px;
+    background-color: #f0f3f6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+
+    &__icon {
+      width: 112px;
+      height: 65px;
+      @include var(background-color, clr-ntrl-min);
+      position: relative;
+      z-index: 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .far {
+        font-size: 40px;
+        @include var(color, clr-base-dk);
+        opacity: 0.9;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        @include var(background-color, clr-ntrl-min);
+        width: 112px;
+        height: 65px;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+      }
+
+      &::before {
+        transform: rotate(60deg);
+        box-shadow: 4px 0 5px -3px;
+      }
+
+      &::after {
+        transform: rotate(-60deg);
+        box-shadow: -4px 0 5px -3px;
+      }
+    }
+  }
+
+  &__head {
+    font-weight: 900;
+    @include var(color, clr-base-dk);
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+
+  &__text {
+    line-height: 1.5;
+  }
+
+}
+
+.travel__card {
+  max-width: 200px;
+  min-height: 382px;
+  padding: 20px;
+  @include var(color, clr-ntrl-min);
+  position: relative;
+  cursor: pointer;
+
+  &__stars {
+    font-size: 14px;
+    margin-bottom: 128px;
+  }
+
+  &__head {
+    font-size: 1.75rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    line-height: 1.4;
+  }
+
+  &__price {
+    height: 62px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+
+    li:nth-child(2) {
+      font-weight: 700;
+      font-size: 1.625rem;
+    }
+  }
+}
+
+.testimonial__card {
+  color: #bcbcbc;
+  max-width: 555px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: justify;
+
+  .fas {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+
+    &__name {
+      padding-left: 20px;
+      @include var(color, clr-primary);
+      font-weight: 700;
+    }
+  }
+}

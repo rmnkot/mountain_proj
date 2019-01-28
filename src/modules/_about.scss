@@ -1,0 +1,62 @@
+/*-------------------------------------  About  ------------------------------------------*/
+.waves {
+  margin-bottom: 38px;
+
+  &--center {
+    grid-column: 2 / 3;
+    margin: 0 auto 38px;
+  }
+}
+
+.about {
+  background-image: url(../img/bg-img/about-bg.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 665px;
+
+  &__container {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: auto 100px auto;
+    margin-top: -38px;
+  }
+
+  &__text {
+    grid-column: 1 / 2;
+    align-self: center;
+    margin-top: 38px;
+
+    &__description {
+      width: 360px;
+      font-size: 14px;
+      line-height: 2;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      padding: 1.2em 2.1em;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__photos {
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-columns: 90px 260px auto;
+    grid-template-rows: 38px 277px 257px 92px 38px;
+
+    &__img-1 {
+      grid-column: 2 / 4;
+      grid-row: 1 / 4;
+    }
+
+    &__img-2 {
+      grid-column: 1 / 3;
+      grid-row: 3 / 5;
+    }
+  }
+}

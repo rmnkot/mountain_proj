@@ -1,0 +1,42 @@
+/*-------------------------------------  Travel  ------------------------------------------*/
+
+.travel {
+  background-image: url(../img/bg-img/travel.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0 477px;
+
+  &__container {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+}
+
+.carp {
+  background-image: url(../img/card/card-1.jpg);
+  background-size: cover;
+}
+
+.alp {
+  background-image: url(../img/card/card-2.jpg);
+  background-size: cover;
+}
+
+.pyr {
+  background-image: url(../img/card/card-3.jpg);
+  background-size: cover;
+}
+
+.rock {
+  background-image: url(../img/card/card-4.jpg);
+  background-size: cover;
+}
+
+.kavk {
+  background-image: url(../img/card/card-5.jpg);
+  background-size: cover;
+}

@@ -1,0 +1,45 @@
+/*-------------------------------------  Offer  ------------------------------------------*/
+
+.offer {
+  background-image: url(../img/bg-img/tree.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 245px;
+
+  &__block {
+    grid-column: 2 / 3;
+
+    &__description {
+      margin-top: 18px;
+      line-height: 1.7;
+      margin-bottom: 22px;
+    }
+
+    &__form {
+      max-width: 855px;
+      padding: 3px;
+      @include var(background-color, clr-ntrl-min);
+      border-radius: 4px;
+      position: relative;
+      margin-bottom: 18px;
+
+      &__btn {
+        padding: 1.35em 3.5em;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        font-weight: 700;
+        position: absolute;
+        right: 3px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &__privacy {
+      font-size: 14px;
+      @include var(color, clr-primary);
+    }
+  }
+}

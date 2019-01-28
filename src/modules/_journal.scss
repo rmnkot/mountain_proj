@@ -1,0 +1,87 @@
+/*-------------------------------------  Journal  ------------------------------------------*/
+
+.section-header {
+  grid-column: 2 / 3;
+  text-align: center;
+}
+
+.journal {
+  padding-top: 70px;
+  padding-bottom: 85px;
+
+  &__grid {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0 0 40px -7px rgba(6, 6, 6, 0.35);
+
+    &__img--left {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    &__text--top,
+    &__text--left,
+    &__text--right {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+
+      }
+    }
+
+    &__text--top {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+
+      &::before {
+        left: -10px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #ffffff;
+      }
+    }
+
+    &__img--bottom {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    &__text--left {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+
+      &::before {
+        right: -10px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid #ffffff;
+      }
+
+    }
+
+    &__img--right {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
+
+    &__text--right {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+
+      &::before {
+        top: -10px;
+        left: 45px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #ffffff;
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,60 @@
+/*-------------------------------------  Form  ------------------------------------------*/
+.form {
+
+  &__input {
+    @include var(background-color, clr-ntrl-min);
+    padding: 18px 20px;
+    width: 300px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+
+  }
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px 50px;
+  max-width: 515px;
+  border-radius: 8px;
+  background-image: url(../img/bg-img/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2.5px 4.33px 51px 0px rgba(0, 0, 0, 0.18);
+
+  &__head {
+    margin: 0 auto 10px;
+    font-size: 38px;
+    @include var(color, clr-primary);
+  }
+
+  &__text {
+    text-align: center;
+    color: rgb(60, 60, 60);
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    @include var(background-color,
+    clr-ntrl-min);
+    border: none;
+    border-radius: 4px;
+    height: 60px;
+    width: 455px;
+    margin-bottom: 20px;
+    padding-left: 22px;
+    font-size: 18px;
+
+    &::placeholder {
+      color: rgb(200, 200, 200);
+    }
+  }
+
+  &__btn {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    height: 70px;
+  }
+}

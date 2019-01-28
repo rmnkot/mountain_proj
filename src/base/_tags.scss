@@ -1,0 +1,47 @@
+/*----------------------------------- Tags -----------------------------------------------*/
+
+html {
+  font-size: $fs-base;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  @include var(color, clr-base-lt);
+  @include var(background-color, clr-ntrl-min);
+}
+
+h1 {
+  font-size: $fs-h1;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  @include var(color, clr-ntrl-min);
+}
+
+h2,
+h3,
+h4 {
+  @include var(color, clr-base-dk);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: $fs-h2;
+  letter-spacing: 3px;
+  margin-bottom: 75px;
+}
+
+h3 {
+  font-size: $fs-h3;
+  letter-spacing: 2px;
+}
+
+h4 {
+  font-size: $fs-h4;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}

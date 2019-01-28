@@ -1,0 +1,90 @@
+/*==================================== Layout =============================================*/
+
+body {
+  display: grid;
+  grid-template-columns: minmax(20px, 1fr) minmax(320px, 1140px) minmax(20px, 1fr);
+  grid-template-rows: auto auto auto;
+
+  // @include media('tablet-wide', max) {
+  //   grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 0.5fr;
+  // }
+
+  // @include media('desktop-xl') {
+  //   grid-template-columns: 2fr 2fr 1fr 1fr 2fr 2fr;
+  // }
+}
+
+.header,
+.main,
+.footer,
+.about,
+.journal,
+.offer,
+.scheme,
+.travel,
+.gallery,
+.logos {
+  grid-column: 1 / span 3;
+  display: grid;
+  grid-template-columns: inherit;
+  // grid-column-gap: inherit;
+  position: relative;
+}
+
+.header,
+.footer {
+  background-position: center top;
+}
+
+.header {
+  grid-row: 1 / 2;
+  // grid-template-rows: 200px 140px;
+  background-image: url("../img/bg-img/hero.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 150px;
+
+  // align-content: space-between;
+}
+
+.main {
+  grid-row: 2 / 3;
+  grid-template-rows: repeat(7, auto);
+}
+
+.about {
+  grid-row: 1;
+}
+
+.journal {
+  grid-row: 2;
+}
+
+.offer {
+  grid-row: 3;
+}
+
+.scheme {
+  grid-row: 4;
+}
+
+.travel {
+  grid-row: 5;
+}
+
+.gallery {
+  grid-row: 6;
+}
+
+.logos {
+  grid-row: 7;
+}
+
+.footer {
+  grid-row: 3 / 4;
+  background-image: url("../img/bg-img/footer.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
