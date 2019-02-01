@@ -551,7 +551,27 @@
   height: 500px; }
 
 .footer__bottom {
-  height: 83px; }
+  height: 83px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .footer__bottom__reserved {
+    font-size: 18px;
+    color: #6c97a6; }
+  .footer__bottom__social a {
+    margin-right: 6px; }
+  .footer__bottom__social a:last-child {
+    margin-right: 0; }
+  .footer__bottom__phone {
+    font-size: 27px;
+    font-family: "Roboto", sans-serif;
+    color: #7ec4d6; }
 
 /*==================================== States =============================================*/
 /*# sourceMappingURL=style.css.map */

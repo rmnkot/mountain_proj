@@ -22,4 +22,29 @@
 
 .footer__bottom {
   height: 83px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__reserved {
+    font-size: 18px;
+    color: #6c97a6;
+  }
+
+  &__social {
+    a {
+      margin-right: 6px;
+    }
+
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__phone {
+    font-size: 27px;
+    font-family: "Roboto", sans-serif;
+    color: #7ec4d6;
+
+  }
 }
